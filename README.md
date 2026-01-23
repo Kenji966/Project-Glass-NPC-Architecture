@@ -22,10 +22,10 @@ The system uses a `Dictionary<Enum, Delegate>` approach to dispatch states, ensu
 
 | Script Name | Responsibility |
 | :--- | :--- |
-| **[NPCBehaviourManager.cs](./Assets/Scripts/NPCBehaviourManager.cs)** | The "Brain" of the NPC. Manages state transitions using Delegates. |
-| **[NpcMoveState.cs](./Assets/Scripts/NpcMoveState.cs)** | Handles NavMesh navigation and movement parameters. |
-| **[NpcOrderState.cs](./Assets/Scripts/NpcOrderState.cs)** | Manages the logic for ordering interactions within the tavern environment. |
-| **[NPCEmotionManager.cs](./Assets/Scripts/NPCEmotionManager.cs)** | Dynamic reaction system based on waiting time thresholds. |
+| **[NPCBehaviourManager.cs](./NPC_Architecture/NPCBehaviourManager.cs)** | The "Brain" of the NPC. Manages state transitions using Delegates. |
+| **[NpcMoveState.cs](./NPC_Architecture/NpcState/NpcMoveState.cs)** | Handles NavMesh navigation and movement parameters. |
+| **[NpcOrderState.cs](./NPC_Architecture/NpcState/NpcOrderState.cs)** | Manages the logic for ordering interactions within the tavern environment. |
+| **[NPCEmotionManager.cs](./NPC_Architecture/NPCEmotionManager.cs)** | Dynamic reaction system based on waiting time thresholds. |
 
 ---
 
