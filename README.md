@@ -3,7 +3,6 @@
 [![Unity](https://img.shields.io/badge/Unity-6-black?style=flat&logo=unity)](https://unity.com/)
 [![Language](https://img.shields.io/badge/C%23-10.0-blue)](https://docs.microsoft.com/en-us/dotnet/csharp/)
 [![Pattern](https://img.shields.io/badge/Pattern-Finite%20State%20Machine-orange)]()
-[![Status](https://img.shields.io/badge/Status-Playable%20Alpha-green)]()
 
 <div align="center">
   </div>
