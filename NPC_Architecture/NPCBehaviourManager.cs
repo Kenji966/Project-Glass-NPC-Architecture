@@ -91,7 +91,6 @@ public class NPCBehaviourManager : MonoBehaviour
     #region State Handlers
         NPCBehaviourState HandleSpawnState()
         {
-            Debug.Log("[NPC] Spawn state, prepare to switch to FindPosition");
             // TODO: handle the initial logic when NPC spawn
             return NPCBehaviourState.NPCState_FindPosition;
         }
@@ -100,11 +99,9 @@ public class NPCBehaviourManager : MonoBehaviour
         {
             if (findPositionState == null)
             {
-                Debug.LogWarning("[NPC] FindPosition state not assigned, stay in current state.");
                 return NPCBehaviourState.NPCState_FindPosition;
             }
 
-            Debug.Log("[NPC] run FindPosition state.");
             return findPositionState.RunState();
         }
 
@@ -112,7 +109,6 @@ public class NPCBehaviourManager : MonoBehaviour
         {
             if (moveState == null)
             {
-                Debug.LogWarning("[NPC] Move state not assigned, stay in current state.");
                 return NPCBehaviourState.NPCState_Move;
             }
             return moveState.RunState();
@@ -122,7 +118,6 @@ public class NPCBehaviourManager : MonoBehaviour
         {
             if (orderState == null)
             {
-                Debug.LogWarning("[NPC] Order state not assigned, stay in current state.");
                 return NPCBehaviourState.NPCState_Order;
             }
             return orderState.RunState();
@@ -132,7 +127,6 @@ public class NPCBehaviourManager : MonoBehaviour
         {
             if (orderWaitingState == null)
             {
-                Debug.LogWarning("[NPC] OrderWaiting state not assigned, stay in current state.");
                 return NPCBehaviourState.NPCState_OrderWaiting;
             }
             return orderWaitingState.RunState();
@@ -142,7 +136,6 @@ public class NPCBehaviourManager : MonoBehaviour
         {
             if (orderCompleteState == null)
             {
-                Debug.LogWarning("[NPC] OrderComplete state not assigned, stay in current state.");
                 return NPCBehaviourState.NPCState_OrderComplete;
             }
             return orderCompleteState.RunState();
@@ -151,14 +144,12 @@ public class NPCBehaviourManager : MonoBehaviour
         {
             if (leaveState == null)
             {
-                Debug.LogWarning("[NPC] Leave state not assigned, stay in current state.");
                 return NPCBehaviourState.NPCState_Leave;
             }
             return leaveState.RunState();
         }
         NPCBehaviourState HandleGenericState(NPCBehaviourState state)
         {
-            Debug.Log($"[NPC] current state: {state}");
             return state;
         }
     
