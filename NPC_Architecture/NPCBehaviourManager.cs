@@ -58,7 +58,6 @@ public class NPCBehaviourManager : MonoBehaviour
     {
         if (!stateHandlers.TryGetValue(currentBehaviourState, out var handler))
         {
-            Debug.LogWarning($"[NPC] no corresponding state handler: {currentBehaviourState}");
             return;
         }
 
