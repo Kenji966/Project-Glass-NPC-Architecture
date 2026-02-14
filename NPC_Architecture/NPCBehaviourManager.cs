@@ -85,7 +85,7 @@ public class NPCBehaviourManager : MonoBehaviour
     void SetBehaviourState(NPCBehaviourState newState)
     {
         currentBehaviourState = newState;
-        Debug.Log($"[NPC] 進入狀態：{currentBehaviourState}");
+        
     }
 
 
